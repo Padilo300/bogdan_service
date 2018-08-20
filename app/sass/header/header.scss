@@ -1,0 +1,55 @@
+#header{
+    background-color: $main-theme-color;
+    min-height: 60px;
+    
+    .logoText{
+        line-height: 54px;
+        margin: 0;
+        font-size: 1.3em;
+        padding: 0 0 0 10px;
+        position: relative;
+        width: 160px;
+        margin: 0 auto;
+        text-align: center;
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 50px;
+            left: -26px;
+            top: 5px;
+            background-image: url(../img/logo.png);
+            background-repeat: no-repeat;
+        }
+    }
+    nav{
+        position: relative;
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            top: 8px;
+            @media screen  and (max-width: 991px){
+                justify-content: center;
+            }
+            li{
+                a{
+                    display: block;
+                    position: relative;
+                    font-size: 1.3em;
+                    padding: 0 20px;
+                    min-height: 39px;
+                    line-height: 39px;
+                    .fa{
+                        padding: 0 5px 0 0 ;
+                    }
+                    &.active{
+                        border-radius: 10px;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

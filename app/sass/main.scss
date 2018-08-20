@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import "variable/variabe.scss" ;
+@import "header/header.scss"    ;
+@import "header/nav.scss"       ;
+
+@import "section/sectionEditOrder.scss";
+@import "button/button.scss";
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    color: $main-text-color;
+}
+a{
+    color: $main-text-color;
+    text-decoration: none;
+    &:hover{
+        color: $main-text-color;
+        text-decoration: none;
+    }
+    &:focus{
+        color: $main-text-color;
+        text-decoration: none;
+    }
+    &:link{
+        color: $main-text-color;
+        text-decoration: none;
+    }
+    &:visited{
+        color: $main-text-color;
+        text-decoration: none;
+    }
+}
+.slimText{
+    font-weight: 100;
+}
+:root{
+    height: 200vh;
+}
