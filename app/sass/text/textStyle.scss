@@ -1,0 +1,23 @@
+.themeCaption{
+    font-size: 2.1em;
+    margin: 35px 0;
+    font-weight: 300;
+    text-align: center;
+}
+.border_theme{
+    width: 100%;
+    border-bottom: 1px solid #9999996e;
+    margin: 10px 0 20px 0;
+}
+.textBold{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.textSmall{
+    font-size: 1.3em;
+    font-weight: 300;
+}
+.textPale{
+    @extend .textBold;
+    color: #a8a8a8;   
+}

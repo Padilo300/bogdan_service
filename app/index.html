@@ -42,6 +42,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
+                                        <img src="/img/wallet.png" alt="wallet">
                                         $ 200
                                     </a>
                                 </li>
@@ -62,48 +63,213 @@
         <p class="h2 text-center slimText">
                 СОЗДАНИЕ ЗАКАЗА
         </p>
-        <form action="/" method="POST">
-            <table>
-                <tr>
-                    <td colspan="1" >
-                        <input type="url" name="url_1" placeholder="введите ссылку">
-                    </td>
-                    <td> </td>
-                    <td>
-                            <input type="number" value="250" placeholder="1000 кол-во">
-                    </td>
-                </tr>
-            </table>
+        <form action="/" method="POST" id="formOrder">
+            <!-- oder 1 -->
+            <div class="row" id="order1">
+                <div class="col-xs-12 col-sm-9 col-lg-10">
+                    <input type="url" required name="url_1" placeholder="введите ссылку" value="https://">   
+                    
+                </div>
+                <div class="col-xs-12 col-sm-3 col-lg-2">
+                    <input type="number" required name="count1"  placeholder="Кол-во">   
+                </div>
+                    
+                
+                <div class="col-xs-12 col-sm-10 col-lg-11">
+                    <input type="text" name="parametr1" placeholder="Опишите детали вашего заказа, цвет, размер и т.д.">
+                </div>
+                <div class="col-xs-12 col-sm-2  col-lg-1 ">
+                    <button type="button" class="resetInput check pull-right"  data-form-id="order1" data-status="false">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </button>  
+                    <button type="button" class="resetInput trash trash pull-right" data-check="check" data-form-id="order1" data-status="true">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>    
+                </div>
+            </div>
             <br>
-            <table>
-                <tr>
-                    <td colspan="1" >
-                        <input type="text" name="parametr1" placeholder="введите параметры">
-                    </td>
-                    <td>
-                        <button type="reset" class="resetInput">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </button>
-                    </td>
-                </tr>
-            </table>
-            <p class="text-left ">
+            <!-- oder 2 -->
+            <div class="row hide orderHide" id="order2">
+                <div class="col-xs-12 col-sm-9 col-lg-10">
+                    <input type="url" required name="url_2" placeholder="введите ссылку" value="https://">   
+                </div>
+                <div class="col-xs-12 col-sm-3 col-lg-2">
+                    <input type="number" required name="count2"  placeholder="Кол-во">   
+                </div>
+                <div class="col-xs-12 col-sm-10 col-lg-11">
+                    <input type="text" name="parametr2" placeholder="Опишите детали вашего заказа, цвет, размер и т.д.">
+                </div>
+                <div class="col-xs-12 col-sm-2  col-lg-1 ">
+                    <button type="button" class="resetInput check pull-right"  data-form-id="order2" data-status="false">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </button>  
+                    <button type="button" class="resetInput trash trash pull-right" data-check="check" data-form-id="order2" data-status="true">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>    
+                </div>
+            </div>
+            <br>
+            <!-- oder 3 -->
+            <div class="row hide orderHide" id="order3">
+                <div class="col-xs-12 col-sm-9 col-lg-10">
+                    <input type="url" required name="url_3" class="" placeholder="введите ссылку" value="https://">   
+                </div>
+                <div class="col-xs-12 col-sm-3 col-lg-2">
+                    <input type="number" required name="count3"  placeholder="Кол-во">   
+                </div>
+                <div class="col-xs-12 col-sm-10 col-lg-11">
+                    <input type="text" name="parametr3" placeholder="Опишите детали вашего заказа, цвет, размер и т.д.">
+                </div>
+                <div class="col-xs-12 col-sm-2  col-lg-1 ">
+                    <button type="reset" class="resetInput  check pull-right"  data-form-id="order3" data-status="false">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </button>  
+                    <button type="reset" class="resetInput trash trash pull-right" data-check="check" data-form-id="order3" data-status="true">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>    
+                </div>
+            </div>
+            <br>
+            <!-- oder 4 -->
+            <div class="row hide orderHide" id="order4">
+                <div class="col-xs-12 col-sm-9 col-lg-10">
+                    <input type="url" required name="url_3" placeholder="введите ссылку" value="https://">   
+                </div>
+                <div class="col-xs-12 col-sm-3 col-lg-2">
+                    <input type="number" required name="count3"  placeholder="Кол-во">   
+                </div>
+                <div class="col-xs-12 col-sm-10 col-lg-11">
+                    <input type="text" name="parametr3" placeholder="Опишите детали вашего заказа, цвет, размер и т.д.">
+                </div>
+                <div class="col-xs-12 col-sm-2  col-lg-1 ">
+                    <button type="reset" class="resetInput check pull-right"  data-form-id="order4" data-status="false">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </button>  
+                    <button type="reset" class="resetInput trash trash pull-right" data-check="check" data-form-id="order4" data-status="true">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>    
+                </div>
+            </div>
+            <br>
+            <!-- oder 5 -->
+            <div class="row hide orderHide" id="order5">
+                <div class="col-xs-12 col-sm-9 col-lg-10">
+                    <input type="url" required name="url_3" placeholder="введите ссылку" value="https://">   
+                </div>
+                <div class="col-xs-12 col-sm-3 col-lg-2">
+                    <input type="number" required name="count3"  placeholder="Кол-во">   
+                </div>
+                <div class="col-xs-12 col-sm-10 col-lg-11">
+                    <input type="text" name="parametr3" placeholder="Опишите детали вашего заказа, цвет, размер и т.д.">
+                </div>
+                <div class="col-xs-12 col-sm-2  col-lg-1 ">
+                    <button type="reset" class="resetInput  check pull-right"  data-form-id="order5" data-status="false">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </button>  
+                    <button type="reset" class="resetInput trash trash pull-right" data-check="check" data-form-id="order5" data-status="true">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>    
+                </div>
+            </div>
+            
+            <button class="addProduct" id="addProduct" type="button">
+                Добавить еще товар +1
+            </button>
+            <p class="text-left hParam">
                     Выберите способ доставки: <mark>*</mark>
             </p>
-            <label for="deliveryAvia">
-                    <input type="checkbox" value="АВИАДОСТАВКА" name="deliveryAvia" id="deliveryAvia">
-                    АВИАДОСТАВКА
-            </label>
-            <label for="deliverySia">
-                    <input type="checkbox" value="МОРСКАЯ ДОСТАВКА " name="deliverySia" id="deliverySia">
-                    МОРСКАЯ ДОСТАВКА
-                    
-            </label>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <label for="deliveryAvia">
+                        <input type="radio" checked="checked" class="radio" required value="АВИАДОСТАВКА" name="delivery" id="deliveryAvia">
+                        <span class="radio-custom"></span>
+                        <span class="label">АВИАДОСТАВКА</span>
+                    </label>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <label for="deliverySia">
+                        <input type="radio" class="radio"  value="МОРСКАЯ ДОСТАВКА " name="delivery" id="deliverySia">
+                        <span class="radio-custom"></span>
+                        <span class="label">МОРСКАЯ ДОСТАВКА</span>
+                        
+                    </label>
+                </div>
+            </div>
+            
+            <p class="text-left hParam">
+                Выберите дополнительные услуги: 
+            </p>
+            <div class="row gridParam">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <label for="AddReeRight">
+                        <input type="checkbox" class="radio"  value="Продающее описание товара" name="AddReeRight" id="AddReeRight">
+                        <span class="radio-custom"></span>
+                        <span class="label">Продающее описание товара</span>
+                    </label>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <label for="AddPhoto">
+                        <input type="checkbox" class="radio"  value="Заказать фото-сьемку " name="AddPhoto" id="AddPhoto">
+                        <span class="radio-custom"></span>
+                        <span class="label">Заказать фото-сьемку</span>
+                    </label>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-6">
+                    <label for="AddLadnigPage">
+                        <input type="checkbox" class="radio"  value="Заказать landing-page " name="AddLadnigPage" id="AddLadnigPage">
+                        <span class="radio-custom"></span>
+                        <span class="label">Заказать landing-page</span>
+                    </label>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <label for="AddAds">
+                        <input type="checkbox" class="radio"  value="Заказать настройку рекламы " name="AddAds" id="AddAds">
+                        <span class="radio-custom"></span>
+                        <span class="label">Заказать настройку рекламы </span>
+                    </label>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <label for="AddPromoVideo">
+                        <input type="checkbox" class="radio"  value="Рекламный ролик " name="AddPromoVideo" id="AddPromoVideo">
+                        <span class="radio-custom"></span>
+                        <span class="label">Рекламный ролик</span>
+                    </label>
+                </div> 
+            </div>
+            <p class="text-left hParam hParamLast">
+                Оформление заказа: 
+            </p>
+            <p class="alertFidBack">
+                Ваш заказ будет обработан в течении 15 минут после оформления! Вы получите уведомление по смс или e-mail.
+            </p>
+            <p class="alertMoneLeft">
+                <b>
+                    Спишется с баланса: 
+                </b>
+                $70
+            </p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <button class="submitBTN">
+                        ОТПРАВИТЬ ЗАКАЗ
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <button class="resetAllBTN" type="reset">
+                        Отменить всё
+                    </button>
+                </div>
+            </div>
+            
+            
+            
                         
         </form>
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="/js/jquery.validate.min.js"></script>
     <script src="/js/main.js"></script>
+    
 </body>
 </html>

@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @import "variable/variabe.scss" ;
-@import "header/header.scss"    ;
-@import "header/nav.scss"       ;
-
-@import "section/sectionEditOrder.scss";
-@import "button/button.scss";
-
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -37,3 +31,13 @@ a{
 :root{
     height: 200vh;
 }
+
+@import "header/header.scss"                ; // шапка
+@import "text/textStyle.scss"               ; // свойстава для текста
+@import "header/nav.scss"                   ; // меню; мобильное меню
+@import "section/sectionСreateOrder.scss"   ; // страница создания заказа
+@import "button/button.scss"                ; // стили кнопок
+@import "admin/orderInfo.scss"              ; // страница состояния заказов (админ)
+@import "admin/orderEdit.scss"              ; // страница редактирования заказа (админ)
+@import "table/table.scss"                  ; // стили для таблиц
+

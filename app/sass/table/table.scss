@@ -1,0 +1,88 @@
+.wrapTable{
+    overflow: auto;
+    .tableProduct{
+        width: 100%;
+        min-width: 990px;
+        tr{
+            transition: all 0.3s;
+            &:hover{
+                background: #d2d2d24f;
+            }
+            &:first-child:hover{
+                background-color: #f9f9f9;  
+            }
+            th{
+                font-size: 1.3em;
+                font-weight: 500;
+                border: 1px solid #d4d4d7;
+                text-align: center;
+                &:nth-child(3){
+                    border-right: none;
+                }
+                &:nth-child(4){
+                    border-left: none;
+                }     
+            }
+            td{
+                border: 1px solid #d4d4d7;
+                &:nth-child(3){
+                    border-right: none;
+                }
+                &:nth-child(4){
+                    border-left: none;
+                }            
+                input{
+                    border: none;
+                    background: transparent;
+                    font-size: 1.1em;
+                    width: 90%;
+                    display: block;
+                    margin: 0 auto;
+                    text-align: center;
+                    &.linkProduct{
+                        color: #457cc7;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    
+    }    
+    .tableCastom{
+        @extend .tableProduct;
+        tr{
+            
+            
+            td{
+                transition: all 0.3s;
+                border: none;
+                &:nth-child(2){
+                    width: 60%;
+                }
+                &:first-child{
+                    background-color: #cacaca40;
+                }
+                &:nth-child(3){
+                    width: 7%;
+                    text-align: center;
+                    background-color: #cacaca40;
+                }
+                &:last-child{
+                    width: 6%;
+                }
+
+            }
+            
+            &:nth-child(odd){
+                background-color: #cacaca47;
+            }
+            &:hover{
+                background-color: #fff !important;
+                td{
+                    background-color: #fff !important;
+                }
+            }
+        }
+
+    }
+}

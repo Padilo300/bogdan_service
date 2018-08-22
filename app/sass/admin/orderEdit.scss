@@ -1,0 +1,90 @@
+.AdminEditOrder{
+  background-color: #f9f9f9;  
+  border-radius: 10px;
+    .oderCart{
+        background: #f9f9f9;
+        padding: 15px 0;
+        height: max-content;
+        margin: 0;
+        min-height: max-content;
+        &:hover{
+            transform: none;
+            box-shadow: none;
+        }
+        ul{
+            font-size: 1.2em;
+            @media screen and (max-width: 767px) {
+                li{
+                    &:before{
+                        left: -25px !important;
+                        
+                    }
+                }
+            }
+            
+        }
+        header{
+            .header_leftSide,
+            .orderCart_dataTime{
+                @media screen and (max-width: 767px){
+                    display: flex;
+                    justify-content: center;
+                }
+                .orderCart_status{
+                    @media screen and (max-width: 767px){
+                        left: 5px;
+                        top: 2px;
+                    }
+                    
+                }
+            }
+        }
+        .orderCart_body{
+            border: none;
+            &>div{
+                padding: 0 15px 0 15px;
+            }
+            .orderCart_body_left_name{
+                @media screen and (max-width: 767px) {
+                    font-size: 1.3em;
+                    margin: 20px auto;
+                    text-align: center;
+                }
+                
+            }
+            &>.deliverySide{
+                padding: 24px 15px 0 15px;
+                @media screen and (max-width: 767px) {
+                    padding: 0 15px 0 15px;
+                }
+                ul{
+                    .orderCountDetail{
+                        @media screen and (max-width: 767px) {
+                            white-space: normal;
+                        }
+                        &:before{
+                            @extend .faCastom;
+                            content: "\f1b2";
+                            top: 1px;
+                        }
+                    }
+                    .oderDeliveryType{
+                        &:before{
+                            @extend .faCastom;
+                            content: "\f1d8";
+                            top: 1px;
+                            left: -22px;
+                        }
+                    }
+                
+                }
+                .footerRightSide{
+                    padding-top: 10px;
+                }
+            }
+            &>.orderCart_body_right{
+                padding:  3px 15px 0 15px;
+            }
+        }
+    }
+}
